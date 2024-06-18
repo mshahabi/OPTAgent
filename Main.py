@@ -13,13 +13,13 @@ import os
 from pathlib import Path
 
 _ = load_dotenv(find_dotenv())
-Key = os.getenv("OPENAI_API_KEY")
+key = os.getenv("OPENAI_API_KEY")
 
 
 # import python tools
 tools = [PythonREPLTool()]
 
-instructions = """use git clone https://github.com/Pyomo/pyomo"""
+instructions = """use git clone https://github.com/Pyomo/pyomo, use cvxopt solver"""
 
 base_prompt = hub.pull("langchain-ai/openai-functions-template")
 
