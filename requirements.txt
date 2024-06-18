@@ -3,3 +3,4 @@ langchain-experimental
 langchain-openai
 langchainhub
 python-dotenv
+pyomo
